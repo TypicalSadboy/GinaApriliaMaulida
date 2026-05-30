@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Ulang Tahun, Gina 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">Gina 🌸</div>
+    <ul class="nav-links">
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="pictures.html">Foto</a></li>
+      <li><a href="memories.html">Life Road</a></li>
+      <li><a href="letter.html">Surat</a></li>
+    </ul>
+  </nav>
+
+  <div id="particles-bg"></div>
+
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-sub">Selamat Ulang Tahun 🎂</p>
+      <h1 class="hero-name">Gina Aprilia Maulida</h1>
+      <p class="hero-quote">
+        "Semoga di hari yang istimewa ini, kamu menyadari betapa berharganya dirimu.
+        Betapa banyak orang yang bersyukur atas kehadiranmu di dunia ini.
+        Semoga hari ini menjadi awal dari hal-hal indah yang sudah menantimu. 🌸"
+      </p>
+      <a href="#about" class="hero-btn">Tentang Gina 🌷</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-card">
+      <div class="about-photo">
+        <img src="images/bete kayaknya.jpeg" alt="Gina" class="about-img" />
+      </div>
+      <div class="about-text">
+        <h2 class="about-name">Gina Aprilia Maulida</h2>
+        <p class="about-desc">
+          Dia adalah seseorang yang sangat spesial di mata banyak orang yang mengenalnya. 
+          Kehadirannya menjadi salah satu hal yang disyukuri oleh keluarganya, sahabatnya, 
+          teman-temannya, bahkan orang-orang yang menyayanginya. Setiap hari, dia terus 
+          berjuang untuk menjadi dirinya sendiri dan berusaha sekuat mungkin menghadapi 
+          berbagai rintangan dalam hidupnya.
+          <br><br>
+          Dia memiliki hati yang sangat lembut. Hatinya mudah tersentuh, mudah terluka, 
+          dan terkadang mudah menangis. Namun justru di situlah letak keindahannya, karena 
+          tidak semua orang mampu tetap memiliki hati yang tulus dan penuh perasaan di dunia 
+          yang terkadang begitu keras.
+          <br><br>
+          Mungkin dia tidak selalu menyadari betapa berharganya dirinya bagi orang-orang 
+          di sekitarnya. Padahal senyum, perhatian, dan kehadirannya sering kali membawa 
+          kebahagiaan yang lebih besar daripada yang ia bayangkan. Dia adalah seseorang yang 
+          layak dicintai, dihargai, dan disyukuri keberadaannya.
+          <br><br>
+          Semoga dia selalu diberikan kebahagiaan, kekuatan, dan banyak alasan untuk 
+          tersenyum. Karena dunia menjadi sedikit lebih indah dengan kehadirannya. 🌷✨
+        </p>
+        <div class="about-tags">
+          <span class="tag">💖 Cantik Bangetttt</span>
+          <span class="tag">✨ Bocil yang baru gede</span>
+          <span class="tag">🌸 Bocil mengemaskan</span>
+          <span class="tag">🎂 Lucu bangetttt</span>
+          <span class="tag">👑 Kesayangan Mamah & Papah</span>
+          <span class="tag">🥰 Bocil Baik Hati</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Birthday Cake Explosion -->
+  <div id="cake-overlay">
+    <div id="cake-container">
+      <div id="cake-wrap" onclick="explodeCake()">
+        <div class="cake-candles">
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+        </div>
+        <div class="cake-body">
+          <div class="cake-top">🌸 Happy Birthday 🌸</div>
+          <div class="cake-middle"></div>
+          <div class="cake-bottom"></div>
+        </div>
+        <p class="cake-hint">Tap kuenya! 🎂</p>
+      </div>
+      <div id="cake-message">
+        <div class="boom-text">🎉 Happy Birthday!</div>
+        <div class="boom-name">Gina Aprilia Maulida</div>
+        <div class="boom-sub">Semoga semua harapan dan impianmu terwujud dan tercapai! 🌸💖</div>
+        <button class="boom-btn" onclick="closeCakeOverlay()">Makasih! 💖</button>
+      </div>
+    </div>
+    <div id="cake-confetti"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

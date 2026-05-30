@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For You, Gina 🤍</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="ls-wrap">
+
+    <div class="ring ring-1"></div>
+    <div class="ring ring-2"></div>
+    <div class="ring ring-3"></div>
+
+    <div id="particles-bg"></div>
+
+    <button id="heart-btn" onclick="openHeart()">
+      <svg class="heart-svg" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="hg" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#ffb3cc"/>
+            <stop offset="100%" stop-color="#e8527a"/>
+          </radialGradient>
+          <radialGradient id="innerGlow" cx="35%" cy="30%" r="45%">
+            <stop offset="0%" stop-color="#fff" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <path d="M55 90 C55 90 15 62 15 38 C15 24 26 15 38 15 C45 15 52 20 55 25 C58 20 65 15 72 15 C84 15 95 24 95 38 C95 62 55 90 55 90Z" fill="url(#hg)"/>
+        <path d="M55 90 C55 90 15 62 15 38 C15 24 26 15 38 15 C45 15 52 20 55 25 C58 20 65 15 72 15 C84 15 95 24 95 38 C95 62 55 90 55 90Z" fill="url(#innerGlow)"/>
+        <circle cx="38" cy="32" r="3" fill="#fff" opacity="0.7"/>
+        <circle cx="48" cy="24" r="2" fill="#fff" opacity="0.5"/>
+        <circle cx="30" cy="42" r="1.5" fill="#fff" opacity="0.4"/>
+      </svg>
+      <div id="btn-label">Happy Birthday, Gina Aprilia Maulida🤍</div>
+      <div id="sub-label">tap to open</div>
+    </button>
+
+    <div id="opened-msg">
+      <div class="big-quote">"Everything about you<br>became my favorite."</div>
+      <div class="small-note"> a love story, just for you —</div>
+      <button id="next-btn" onclick="window.location.href='home.html'">
+        Buka Cerita Kamu ✨
+      </button>
+    </div>
+
+    <div id="explosion"></div>
+
+    <div id="name-tag">~ Gina Aprilia Maulida ~</div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surat untuk Gina 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">Gina 🌸</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="pictures.html">Foto</a></li>
+      <li><a href="memories.html">Life Road</a></li>
+      <li><a href="letter.html" class="active">Surat</a></li>
+    </ul>
+  </nav>
+
+  <div id="particles-bg"></div>
+
+  <section id="letter-section">
+    <div class="letter-wrapper">
+
+      <div class="letter-header">
+        <p class="section-sub">Khusus untuk kamu</p>
+        <h2 class="section-title">Surat untuk Gina 💌</h2>
+      </div>
+
+      <div class="letter-envelope" id="envelope" onclick="openEnvelope()">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body">
+          <div class="envelope-heart">💌</div>
+          <p class="envelope-hint">Tap untuk membuka surat</p>
+        </div>
+      </div>
+
+      <div class="letter-card" id="letter-card">
+        <div class="letter-paper">
+
+          <div class="letter-date">20 April 2026</div>
+
+          <div class="letter-salutation">Untuk Gina Aprilia Maulida,</div>
+
+          <div class="letter-body">
+            <p>
+              Hei, Gin. Selamat ulang tahun yang ke-18. 🎂
+            </p>
+            <p>
+              Hari ini kamu resmi bukan bocil lagi — walaupun tetap bakal dipanggil bocil sih, 
+              tapi kamu tahu maksudnya dengan penuh kasih sayang. 🥰
+            </p>
+            <p>
+              Kamu mungkin tidak selalu menyadari betapa berharganya dirimu. Betapa banyak 
+              orang yang hidupnya jadi lebih berwarna hanya karena ada kamu di dalamnya. 
+              Senyummu, tawamu, bahkan cemberutmu yang menggemaskan itu — semuanya berarti.
+            </p>
+            <p>
+              Di usia 18 ini, kamu sudah melewati begitu banyak hal. Tumbuh dari bocil kecil 
+              yang menggemaskan, berjuang di sekolah, melewati masa-masa susah, dan sekarang 
+              kamu sudah ada di sini — lebih kuat, lebih dewasa, dan tetap sama lucunya.
+            </p>
+            <p>
+              Semoga di tahun ke-18 ini, semua yang kamu impikan perlahan mulai menjadi 
+              kenyataan. Semoga kamu dikelilingi oleh orang-orang yang benar-benar 
+              menyayangimu. Semoga kamu tidak pernah lupa bahwa dirimu layak mendapatkan 
+              semua kebaikan yang ada di dunia ini.
+            </p>
+            <p>
+              Dan kalau suatu hari kamu merasa lelah, sedih, atau ragu — ingat bahwa ada 
+              orang yang selalu berdoa agar kamu baik-baik saja. Selalu. 🌸
+            </p>
+            <p>
+              Selamat ulang tahun, Gina. Semoga 18 jadi angka yang paling indah dalam 
+              hidupmu sejauh ini. 💖
+            </p>
+          </div>
+
+          <div class="letter-closing">
+            <p>Dengan sepenuh hati,</p>
+            <p class="letter-sign">Seseorang yang menyayangimu 🌷</p>
+          </div>
+
+          <div class="letter-deco">🌸 ✨ 💕 ✨ 🌸</div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+  <script>
+    function openEnvelope() {
+      const envelope = document.getElementById('envelope');
+      const card = document.getElementById('letter-card');
+      envelope.classList.add('opened');
+      setTimeout(() => {
+        envelope.style.display = 'none';
+        card.classList.add('visible');
+      }, 700);
+    }
+  </script>
+</body>
+</html>
