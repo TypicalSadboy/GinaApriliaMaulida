@@ -10,7 +10,7 @@ function makeParticle() {
   el.className = 'particle';
   el.textContent = hearts[Math.floor(Math.random() * hearts.length)];
   el.style.left = (Math.random() * 95) + '%';
-  el.style.bottom = '-30px';
+  el.style.top = (80 + Math.random() * 20) + 'vh';
   el.style.fontSize = (10 + Math.random() * 14) + 'px';
   el.style.animationDuration = (5 + Math.random() * 7) + 's';
   el.style.animationDelay = (Math.random() * 3) + 's';
@@ -27,6 +27,7 @@ function makeSakura() {
   const petal = document.createElement('div');
   petal.className = 'sakura';
   petal.style.left = (Math.random() * 100) + '%';
+  petal.style.top = '-30px';
   petal.style.animationDuration = (4 + Math.random() * 6) + 's';
   petal.style.animationDelay = (Math.random() * 4) + 's';
   petal.style.fontSize = (10 + Math.random() * 16) + 'px';
@@ -220,7 +221,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // =====================
-// INIT — SATU SAJA!
+// INIT
 // =====================
 window.addEventListener('load', () => {
   initTransition();
